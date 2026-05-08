@@ -6,11 +6,13 @@ st.set_page_config(page_title="VeroData", layout="wide", page_icon="iconverodata
 
 st.markdown("""
     <style>
-    /* Hide default Streamlit elements for a cleaner SaaS look */
+    .stApp {
+    background-color: white !important;
+    color: #313638 !important;
+    }
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     
-    /* GIGANTIC & CENTERED SIDEBAR BUTTON */
     .stButton>button {
         background-color: #ac3416;
         color: white;
@@ -30,7 +32,6 @@ st.markdown("""
         transform: translateY(-2px);
     }
     
-    /* Tab Styling */
     .stTabs [data-baseweb="tab-list"] { gap: 24px; }
     .stTabs [data-baseweb="tab"] {
         height: 50px;
