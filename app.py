@@ -6,27 +6,12 @@ st.set_page_config(page_title="VeroData", layout="wide", page_icon="iconverodata
 
 st.markdown("""
     <style>
-    .stApp {
-        background-color: #ffffff !important;
-    }
-    
-    [data-testid="stSidebar"] {
-        background-color: #f0f2f6 !important;
-    }
-    
-    [data-testid="stHeader"] {
-        background-color: transparent !important;
-    }
-    
-    .stMarkdown p, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-        color: #313638 !important;
-    }
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     
     .stButton>button {
-        background-color: #ac3416;
-        color: white;
+        background-color: #ac3416 !important;
+        color: white !important;
         border-radius: 8px;
         font-weight: 900 !important;
         font-size: 18px !important;
@@ -38,19 +23,23 @@ st.markdown("""
         box-shadow: 0 4px 6px rgba(172, 52, 22, 0.3);
     }
     .stButton>button:hover { 
-        background-color: #8f4e01; 
+        background-color: #8f4e01 !important; 
         box-shadow: 0 6px 12px rgba(143, 78, 1, 0.4);
         transform: translateY(-2px);
     }
     
     .stTabs [data-baseweb="tab-list"] { gap: 24px; }
-    .stTabs [data-baseweb="tab"] {
-        height: 50px;
-        font-weight: bold;
-        font-size: 16px;
-        color: #666;
-    }
+    .stTabs [data-baseweb="tab"] { height: 50px; font-weight: bold; font-size: 16px; }
     .stTabs [aria-selected="true"] { color: #ac3416 !important; }
+    
+    .stApp { background-color: #ffffff !important; }
+    [data-testid="stSidebar"] { background-color: #f0f2f6 !important; }
+    [data-testid="stHeader"] { background-color: transparent !important; }
+    
+    /* Faz todos os textos, títulos e checkboxes ficarem escuros */
+    p, h1, h2, h3, h4, h5, h6, span, label, div[data-testid="stMarkdownContainer"] {
+        color: #313638 !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -241,11 +230,12 @@ with tab_export:
                 )
                 
                 st.write("")
+                st.write("")
                 st.markdown(f"""
-                    <div style="background-color: #313638; padding: 25px; border-radius: 12px; color: white; text-align: center;">
-                        <p style="font-size: 11px; font-weight: bold; color: #E8E9EB; letter-spacing: 1px;">DATA HEALTH SCORE</p>
-                        <h1 style="font-size: 50px; color: #F09D51; margin: 5px 0;">{st.session_state.metrics['health_score']}%</h1>
-                        <p style="font-size: 13px; color: #d9dadc;">Dataset validated successfully.</p>
+                    <div style="background-color: #313638 !important; padding: 25px; border-radius: 12px; text-align: center;">
+                        <p style="font-size: 11px !important; font-weight: bold !important; color: #E8E9EB !important; letter-spacing: 1px !important; margin-bottom: 0px;">DATA HEALTH SCORE</p>
+                        <h1 style="font-size: 50px !important; color: #F09D51 !important; margin: 5px 0 !important;">{st.session_state.metrics['health_score']}%</h1>
+                        <p style="font-size: 13px !important; color: #d9dadc !important; margin-top: 0px;">Dataset validated successfully.</p>
                     </div>
                 """, unsafe_allow_html=True)
     else:
