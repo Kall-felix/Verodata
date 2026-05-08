@@ -1,17 +1,7 @@
 [theme]
-# Cor principal (Botões ativos, barras de carregamento)
-primaryColor = "#F06543"
-
-# Cor do fundo da tela inteira
-backgroundColor = "#E8E9EB"
-
-# Cor de fundo secundária (Barra lateral, painéis)
-secondaryBackgroundColor = "#E0DFD5"
-
-# Cor do texto
-textColor = "#313638"
-
-# Fonte limpa e moderna
-font = "sans serif"
-
 base="light"
+primaryColor="#ac3416"
+backgroundColor="#ffffff"
+secondaryBackgroundColor="#f0f2f6"
+textColor="#313638"
+font="sans serif"
