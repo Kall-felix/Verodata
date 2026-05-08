@@ -209,7 +209,6 @@ with tab_export:
                 
             with right_column:
                 st.markdown("### Export Data")
-                st.button("📄 Microsoft Excel", use_container_width=True)
                 
                 csv_data = st.session_state.clean_df.to_csv(index=False).encode('utf-8')
                 st.download_button(
