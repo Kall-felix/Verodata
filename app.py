@@ -7,8 +7,19 @@ st.set_page_config(page_title="VeroData", layout="wide", page_icon="iconverodata
 st.markdown("""
     <style>
     .stApp {
-    background-color: white !important;
-    color: #313638 !important;
+        background-color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] {
+        background-color: #f0f2f6 !important;
+    }
+    
+    [data-testid="stHeader"] {
+        background-color: transparent !important;
+    }
+    
+    .stMarkdown p, .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+        color: #313638 !important;
     }
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
