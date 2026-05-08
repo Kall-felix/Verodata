@@ -2,7 +2,7 @@
 
 **VeroData** was created to solve one of the biggest pain points in the tech industry and for Small and Medium-sized Businesses (SMBs): the massive amount of time spent cleaning raw data. 
 
-This MVP (Minimum Viable Product) simulates a SaaS platform that democratizes data engineering. Without needing to write a single line of code, the user uploads a corrupted database, and our **CleanFlow Tool** applies statistical and algorithmic rules to deliver a pristine dataset, ready to be consumed by BI tools and Machine Learning models.
+This MVP (Minimum Viable Product) simulates a SaaS platform that democratizes data engineering. Without needing to write a single line of code, the user uploads a corrupted database, and the **CleanFlow Tool** applies statistical and algorithmic rules to deliver a pristine dataset, ready to be consumed by BI tools and Machine Learning models.
 
 ## 🚀 Key Features (How it works)
 
